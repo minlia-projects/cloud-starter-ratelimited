@@ -1,0 +1,25 @@
+{
+  "properties": [
+    {
+      "name": "system.rater.enabled",
+      "description": "是否启用API请求频率限制功能",
+      "type": "java.lang.Boolean",
+      "defaultValue": true
+    }
+  ],
+  "hints": [
+    {
+      "name": "system.rater.enabled",
+      "values": [
+        {
+          "value": "true",
+          "description": "启用API请求频率限制"
+        },
+        {
+          "value": "false",
+          "description": "禁用API请求频率限制"
+        }
+      ]
+    }
+  ]
+}
