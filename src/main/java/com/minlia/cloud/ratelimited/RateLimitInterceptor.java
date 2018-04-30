@@ -1,6 +1,8 @@
 package com.minlia.cloud.ratelimited;
 
+import com.minlia.cloud.exception.ApiException;
 import com.minlia.cloud.ratelimited.annotation.RateLimit;
+import com.minlia.cloud.stateful.code.ApiCode;
 import java.lang.reflect.Method;
 
 import javax.servlet.http.HttpServletRequest;
@@ -50,6 +52,7 @@ public class RateLimitInterceptor extends HandlerInterceptorAdapter {
 		log.debug("limit token is acquired:" + b);
 		if(!b) {
 			throw new RateLimitException("limit token cannot be acquired.");
+//			throw new ApiException(ApiCode.);
 		}
 		return b;
 	}

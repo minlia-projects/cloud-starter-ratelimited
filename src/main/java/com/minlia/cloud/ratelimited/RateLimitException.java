@@ -1,10 +1,11 @@
 package com.minlia.cloud.ratelimited;
 
+/**
+ * @author will
+ */
 public class RateLimitException extends RuntimeException{
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 3119416813619871276L;
+
+	private static final long serialVersionUID = 1L;
 
 	public RateLimitException() {
         super();
